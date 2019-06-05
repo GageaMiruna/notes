@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My notes app</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="dist/main.js"></script>
+  </head>
+
+  <body>
+    <my-notes>
+        <single-note text="text1"></single-note>
+        <single-note text="text2" *ngIf="state"></single-note>
+        <single-note text="text3" *ngIf="state"></single-note>
+        <single-note text="text4" *ngIf="state"></single-note>
+        <single-note text="text1" *ngIf="state"></single-note>
+        <single-note text="text2" *ngIf="state"></single-note>
+        <single-note text="text3" *ngIf="state"></single-note>
+        <single-note text="text4" *ngIf="state"></single-note>
+        <single-note text="text1" *ngIf="state"></single-note>
+        <single-note text="text2" *ngIf="state"></single-note>
+        <single-note text="text3" *ngIf="state"></single-note>
+        <single-note text="text4" *ngIf="state"></single-note>
+    </my-notes>
+ </body>
+</html>
