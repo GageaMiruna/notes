@@ -4,7 +4,7 @@ export class SingleNote extends LitElement{
 
 	static get properties(){
 		return {
-				text: {type : String},
+			text: {type : String},
 		}
 	}
 
