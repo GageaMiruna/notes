@@ -2,6 +2,8 @@ import {LitElement, html, css } from 'lit-element';
 
 export class SingleNote extends LitElement{
 
+	
+
 	static get properties(){
 		return {
 			text: {type : String},
@@ -36,13 +38,14 @@ export class SingleNote extends LitElement{
 	}
 
 	onClickFind() {
+		//delete from  local storafe
 		this.parentNode.removeChild(this);
 		return false;
 	}
-	
+
 	render(){
 		return html`
-		<button @click=${this.onClickFind} >x</button>
+		<button @click=${this.onClickFind}>x</button>
 		<div> ${this.text} </div>
 		`;
 	}

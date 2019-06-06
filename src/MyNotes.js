@@ -15,9 +15,22 @@ export class MyNotes extends LitElement{
 		`;
 	}
 
+	read(){
+		return JSON.parse(localStorage.getItem('notes'));
+	}
+
+	write(data){
+		localStorage.setItem('notes',JSON.stringify(data));
+	}
+
+	
+
+
 	render(){
+		const notes = this.read();
+		
 		return html`
-		<slot></slot>
+			${notes.map((element) => html`<single-note id=${element.id} text=${element.text}></single-note>`)}
 		`;
 	}
 }
